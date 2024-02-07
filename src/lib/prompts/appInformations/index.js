@@ -2,8 +2,7 @@
  * Copyright (C) Servable Community. All rights reserved.
  *--------------------------------------------------------*/
 
-import askForAppName from "./askForAppName.js"
-import askForAppId from "./askForAppId.js"
+import askForCliID from "./askForCliID.js"
 import askForGeneric from "../utils/askForGeneric.js"
 
 import askForGenericPort from "../utils/askForGenericPort.js"
@@ -21,8 +20,8 @@ export default async (props) => {
     subTitle: `Servable required general informations.`
   })
 
-  await askForAppName(props)
-  await askForAppId(props)
+  await askForCliID(props)
+  await askForCliID(props)
 
   await askForGeneric({
     ...props, options: {

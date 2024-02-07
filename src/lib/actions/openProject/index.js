@@ -9,7 +9,7 @@ export default async (props) => {
     const { toolbox, payload, } = props
 
     if (!toolbox.options['open'] && !toolbox.options['quick']) {
-        const cdLocation = toolbox.options['destination'] || payload.appName
+        const cdLocation = toolbox.options['destination'] || payload.cliID
         toolbox.log('To start editing with Visual Studio Code, use the following commands:')
         toolbox.log('')
         toolbox.log('     code ' + cdLocation)

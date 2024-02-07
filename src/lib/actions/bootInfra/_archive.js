@@ -28,6 +28,6 @@ export default async (props) => {
 
     const launchDocker = payload.launchDocker
     if (launchDocker) {
-        toolbox.spawn('bash', ['-c', `docker compose --project-name ${payload.appId} -f ${toolbox.destinationPath()}/.system/app/docker/docker-compose.yaml up -d --remove-orphans`])
+        toolbox.spawn('bash', ['-c', `docker compose --project-name ${payload.cliID} -f ${toolbox.destinationPath()}/.system/app/docker/docker-compose.yaml up -d --remove-orphans`])
     }
 }

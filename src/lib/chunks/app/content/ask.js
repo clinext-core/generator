@@ -12,7 +12,7 @@ export default async () => {
       name: 'destination',
     },
     {
-      name: 'appName',
+      name: 'cliID',
     },
     {
       name: 'license',

@@ -1,8 +1,8 @@
 
 export default ({
   _clinextType: 'command',
-  name: 'servable',
-  description: 'Servable Framework CLI 🐻',
+  name: 'clinext',
+  description: 'CliNext Framework CLI 🐻',
   options: [
     {
       name: 'quick',

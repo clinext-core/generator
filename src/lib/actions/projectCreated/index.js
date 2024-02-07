@@ -6,7 +6,7 @@ export default async (props) => {
     const { toolbox, payload, } = props
 
     toolbox.log('')
-    toolbox.log('Your project ' + payload.appName + ' has been created!')
+    toolbox.log('Your project ' + payload.cliID + ' has been created!')
     toolbox.log('')
 
     toolbox.log('For more information, also visit http://servablecommunity.com and follow us @servablecom.')

@@ -30,7 +30,7 @@ export default async (props) => {
         payload.desiredWriteDestinationPathAbsolute = originalDestinationPath
         payload.desiredWriteDestinationPath = payload.desiredWriteDestinationPathAbsolute.split(path.sep).pop()
 
-        toolbox.log(chalk.italic(`→ No app choice required. The feature will be added servable app in the current folder (${payload.appName}).\n`))
+        toolbox.log(chalk.italic(`→ No app choice required. The feature will be added servable app in the current folder (${payload.cliID}).\n`))
         return
     }
 
