@@ -28,5 +28,10 @@ To launch the cli simply type:
 clinext new
 ```
 
+### Npx
+```bash
+npx clinext new
+```
+
 
 A full documentation is available at [https://docs.clinext.dev](https://docs.clinext.dev)
