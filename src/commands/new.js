@@ -22,7 +22,7 @@ export default ({
       name: 'appDescription',
       type: 'string',
       promptType: 'input',
-      defaultValue: 'A Servable app',
+      defaultValue: 'A CliNext app',
       message: 'App description',
       validators: [{ id: 'nonempty', params: { maxParams: 12 } }]
     },

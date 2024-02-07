@@ -1,9 +1,9 @@
 /*---------------------------------------------------------
- * Copyright (C) Servable Community. All rights reserved.
+ * Copyright (C) CliNext Community. All rights reserved.
  *--------------------------------------------------------*/
 import chalk from "chalk"
 import isFolderClass from "./lib/isFolderClass.js"
-// import getServablePackage from "./lib/getServablePackage.js"
+// import getCliNextPackage from "./lib/getCliNextPackage.js"
 import path from "path"
 import targetFeature from "../targetFeature/index.js"
 import askForGeneric from "../utils/askForGeneric.js"
@@ -33,7 +33,7 @@ export default async (props) => {
         payload.targetClassPath = originalDestinationPath
         payload.targetClass = payload.targetClassPath.split(path.sep).pop()
 
-        // const config = await getServablePackage(originalDestinationPath)
+        // const config = await getCliNextPackage(originalDestinationPath)
         // payload.desiredWriteDestinationPath = ''
         toolbox.log(chalk.italic(`→ The class will be added to the feature in the current folder.\n`))
         return

@@ -12,7 +12,7 @@ export default ({
     }
 
     const _name = input.split(path.sep).pop()
-    const isServable = isFolderFeatureSync(input)
-    return isServable ? `${chalk.underline(_name)} 🐝 ` : `${_name}`
+    const isCliNext = isFolderFeatureSync(input)
+    return isCliNext ? `${chalk.underline(_name)} 🐝 ` : `${_name}`
   }
 })

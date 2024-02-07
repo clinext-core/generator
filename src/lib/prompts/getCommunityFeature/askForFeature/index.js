@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) Servable Community. All rights reserved.
+ * Copyright (C) CliNext Community. All rights reserved.
  *--------------------------------------------------------*/
 /**
 * @param {import('yeoman-toolbox')} toolbox
@@ -14,7 +14,7 @@ dotenv.config()
 
 export default async (props) => {
     const { toolbox, payload } = props
-    // const u = "https://api.registry.servablecommunity.com"
+    // const u = "https://api.registry.cliNextcommunity.com"
 
     const communityFeatureIdToImport = await askForGeneric({
         ...props, options: {

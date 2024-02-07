@@ -6,7 +6,7 @@ export default async (answers, input = '') => {
   const searchTerm = input
   const page = 0
 
-  const url = `${CliNext.env.SERVABLE_API_HOST}/feature/search`
+  const url = `${CliNext.env.cliNext_API_HOST}/feature/search`
 
   try {
     const result = await axios({

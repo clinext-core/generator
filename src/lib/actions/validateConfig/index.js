@@ -1,8 +1,8 @@
 /*---------------------------------------------------------
- * Copyright (C) Servable Community. All rights reserved.
+ * Copyright (C) CliNext Community. All rights reserved.
  *--------------------------------------------------------*/
 
-// import { validateFeature } from '@servable/tools'
+// import { validateFeature } from '@cliNext/tools'
 
 export default async (props) => {
     const { toolbox, payload } = props
@@ -10,27 +10,27 @@ export default async (props) => {
 
     return { isValid: true, message: null }
     // try {
-    //     const configPath = `${appPath}/servable.config.js`
-    //     const servableConfig = (await import(configPath)).default
-    //     // const servableConfig = JSON.parse(configRawdata)
-    //     if (!servableConfig) {
+    //     const configPath = `${appPath}/cliNext.config.js`
+    //     const cliNextConfig = (await import(configPath)).default
+    //     // const cliNextConfig = JSON.parse(configRawdata)
+    //     if (!cliNextConfig) {
     //         return
     //     }
-    //     if (!servableConfig.features) {
-    //         servableConfig.features = {}
+    //     if (!cliNextConfig.features) {
+    //         cliNextConfig.features = {}
     //     }
-    //     servableConfig.features.local = [
+    //     cliNextConfig.features.local = [
     //         `${appPath}/lib/features`
     //         // path.resolve(__dirname, `./features`)
     //     ]
-    //     servableConfig.rootFeaturePayload = {
+    //     cliNextConfig.rootFeaturePayload = {
     //         type: 'app',
     //         id: 'app',
     //         // path: path.resolve(__dirname, "./app")
     //         path: `${appPath}/lib/features`
     //     }
 
-    //     const schema = await buildSchema({ servableConfig })
+    //     const schema = await buildSchema({ cliNextConfig })
     //     return schema
 
     // } catch (e) {

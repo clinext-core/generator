@@ -1,9 +1,9 @@
 /*---------------------------------------------------------
- * Copyright (C) Servable Community. All rights reserved.
+ * Copyright (C) CliNext Community. All rights reserved.
  *--------------------------------------------------------*/
 import chalk from "chalk"
 import isFolderFeature from "./lib/isFolderFeature.js"
-// import getServablePackage from "./lib/getServablePackage.js"
+// import getCliNextPackage from "./lib/getCliNextPackage.js"
 import isFolderFeatureSync from "./lib/isFolderFeatureSync.js"
 import askForGeneric from "../utils/askForGeneric.js"
 import updateTargetFeatureFromPath from "./updateTargetFeatureFromPath.js"
@@ -64,8 +64,8 @@ export default async (props) => {
                 }
 
                 const _name = name.split(path.sep).pop()
-                const isServable = isFolderFeatureSync(name)
-                return isServable ? `${chalk.underline(_name)} 🐝 ` : `${_name}`
+                const isCliNext = isFolderFeatureSync(name)
+                return isCliNext ? `${chalk.underline(_name)} 🐝 ` : `${_name}`
             }
         }
     })

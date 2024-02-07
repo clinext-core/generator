@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) Servable Community. All rights reserved.
+ * Copyright (C) CliNext Community. All rights reserved.
  *--------------------------------------------------------*/
 
 
@@ -16,7 +16,7 @@ export default async (props) => {
     toolbox.ui.drawSectionHeader({
         toolbox,
         title: `Distribution ⠕`,
-        subTitle: `Servable can use an arbiter.`
+        subTitle: `CliNext can use an arbiter.`
     })
 
     await askForGeneric({

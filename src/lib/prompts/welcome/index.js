@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) Servable Community. All rights reserved.
+ * Copyright (C) CliNext Community. All rights reserved.
  *--------------------------------------------------------*/
 
 import drawTitle from "../../lib/draw/drawTitle.js"
@@ -10,7 +10,7 @@ export default async (props) => {
 
     drawTitle({
         toolbox,
-        title: `WELCOME TO THE SERVABLE GENERATOR 🚀 🐻🚀 🐻🚀 🐻🚀 🐻🚀 🐻`,
+        title: `WELCOME TO THE cliNext GENERATOR 🚀 🐻🚀 🐻🚀 🐻🚀 🐻🚀 🐻`,
         // subTitle: `Il n'y a pas de hasard. Il n'y a que des rendez-vous. Paul Éluard`
         // subTitle: quote()
     })

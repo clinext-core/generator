@@ -4,6 +4,6 @@ export default ({
   type: 'string',
   name: 'bridgeframeworkId',
   promptType: 'autocomplete',
-  defaultValue: '@servable/parse-server-engine',
+  defaultValue: '@cliNext/parse-server-engine',
   message: 'Bridge framework id',
 })

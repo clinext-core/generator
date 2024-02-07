@@ -3,42 +3,42 @@ export default [
         "id": "pageable",
         "name": "Pageable",
         "version": "0.0.1",
-        "description": "Adds pageing capacity to a Servable app",
+        "description": "Adds pageing capacity to a CliNext app",
         "packages": [
             {
-                "id": "@servable-community/pageable-parse-server",
+                "id": "@cliNext-community/pageable-parse-server",
                 "description": "",
                 "type": "main",
                 "components": ["server"],
-                "url": "https://github.com/servable-community/pageable-parse-server.git"
+                "url": "https://github.com/cliNext-community/pageable-parse-server.git"
             },
             {
-                "id": "@servable-community/pageable-parse-classes",
+                "id": "@cliNext-community/pageable-parse-classes",
                 "description": "",
                 "type": "classes",
                 "components": ["server"]
             },
         ],
         "author": {
-            "name": "Servable Community",
-            "email": "servablecommunity@gmail.com",
-            "url": "https://servablecommunity.com/"
+            "name": "CliNext Community",
+            "email": "cliNextcommunity@gmail.com",
+            "url": "https://cliNextcommunity.com/"
         },
         "keywords": [
             "node",
             "features",
-            "servable",
+            "cliNext",
             "yeoman-toolbox"
         ],
         "repository": {
             "type": "git",
-            "url": "https://github.com/servable-community/toolbox-servable.git"
+            "url": "https://github.com/cliNext-community/toolbox-cliNext.git"
         },
         "bugs": {
-            "url": "https://github.com/servable-community/toolbox-servable/issues"
+            "url": "https://github.com/cliNext-community/toolbox-cliNext/issues"
         },
         "main": "./toolboxs/app/index.js",
-        "homepage": "http://servablecommunity.com",
+        "homepage": "http://cliNextcommunity.com",
         "license": "MIT",
         "engines": {
             "node": ">=14.15.0"
@@ -50,7 +50,7 @@ export default [
                 "name": "pageable",
                 "slug": "pg",
                 // module: {
-                //     '@servable-community/publishable-parse-server': '*'
+                //     '@cliNext-community/publishable-parse-server': '*'
                 // },
                 // version: '*',
                 "params": {
@@ -83,42 +83,42 @@ export default [
         "id": "emailable",
         "name": "Emailable",
         "version": "0.0.1",
-        "description": "Adds email capacity to a Servable app",
+        "description": "Adds email capacity to a CliNext app",
         "howto": "Fill the API key",
         "packages": [
             {
-                "id": "@servable-community/servable-emailable",
+                "id": "@cliNext-community/cliNext-emailable",
                 "description": "",
                 "type": "main",
                 "components": ["server"],
-                "url": "https://github.com/servable-community/servable-emailable.git"
+                "url": "https://github.com/cliNext-community/cliNext-emailable.git"
             }
         ],
         "author": {
-            "name": "Servable Community",
-            "email": "servablecommunity@gmail.com",
-            "url": "https://servablecommunity.com/"
+            "name": "CliNext Community",
+            "email": "cliNextcommunity@gmail.com",
+            "url": "https://cliNextcommunity.com/"
         },
         "keywords": [
             "node",
             "features",
-            "servable",
+            "cliNext",
             "yeoman-toolbox"
         ],
         "repository": {
             "type": "git",
-            "url": "https://github.com/servable-community/servable-emailable.git"
+            "url": "https://github.com/cliNext-community/cliNext-emailable.git"
         },
         "bugs": {
-            "url": "https://github.com/servable-community/servable-emailable.git#issues"
+            "url": "https://github.com/cliNext-community/cliNext-emailable.git#issues"
         },
         "main": "./toolboxs/app/index.js",
-        "homepage": "http://servablecommunity.com",
+        "homepage": "http://cliNextcommunity.com",
         "license": "MIT",
         "engines": {
             "node": ">=14.15.0"
         },
-        "email": "servablecommunity@gmail.com",
+        "email": "cliNextcommunity@gmail.com",
         "icon": "https://cdn3d.iconscout.com/3d/free/preview/free-toffee-4356774-3618919.png?f=avif&h=1400",
         "declaration": {
             "template": {
@@ -129,7 +129,7 @@ export default [
                     "apiKey": "<%= apiKey %>",
                     "frontWebUrl": "<%= frontWebUrl %>",
                     "env": CliNext.env.NODE_ENV,
-                    "cliID": CliNext.env.SERVABLE_APP_NAME,
+                    "cliID": CliNext.env.cliNext_APP_NAME,
                     "restrictSend": "<%= restrictSend %>",
                     "restrictTo": "<%= restrictTo %>",
                     "restrictToRegex": "<%= restrictToRegex %>",
@@ -208,14 +208,14 @@ export default [
         "name": "Slugable",
         "packages": [
             {
-                "id": "@servable-community/slugable",
+                "id": "@cliNext-community/slugable",
                 "description": "",
                 "type": "main"
             }
         ],
-        "author": "Servable Community",
-        "email": "servablecommunity@gmail.com",
-        "description": "Adds slug capacity to a Servable app",
+        "author": "CliNext Community",
+        "email": "cliNextcommunity@gmail.com",
+        "description": "Adds slug capacity to a CliNext app",
         "icon": "https://cdn3d.iconscout.com/3d/free/preview/free-toffee-4356774-3618919.png?f=avif&h=1400",
     },
     {
@@ -223,14 +223,14 @@ export default [
         "name": "Reviewable",
         "packages": [
             {
-                "id": "servable-reviewable",
+                "id": "cliNext-reviewable",
                 "description": "",
                 "type": "main"
             }
         ],
-        "author": "Servable Community",
-        "email": "servablecommunity@gmail.com",
-        "description": "Adds review capacity to a Servable app",
+        "author": "CliNext Community",
+        "email": "cliNextcommunity@gmail.com",
+        "description": "Adds review capacity to a CliNext app",
         "icon": "https://cdn3d.iconscout.com/3d/free/preview/free-toffee-4356774-3618919.png?f=avif&h=1400",
     },
     {
@@ -238,14 +238,14 @@ export default [
         "name": "Publishable",
         "packages": [
             {
-                "id": "servable-publishable",
+                "id": "cliNext-publishable",
                 "description": "",
                 "type": "main"
             }
         ],
-        "author": "Servable Community",
-        "email": "servablecommunity@gmail.com",
-        "description": "Adds review capacity to a Servable app",
+        "author": "CliNext Community",
+        "email": "cliNextcommunity@gmail.com",
+        "description": "Adds review capacity to a CliNext app",
         "icon": "https://cdn3d.iconscout.com/3d/free/preview/free-toffee-4356774-3618919.png?f=avif&h=1400",
     }
 ]

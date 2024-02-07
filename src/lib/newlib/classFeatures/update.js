@@ -1,5 +1,5 @@
 
-import { cleanFeatures } from '@servable/tools'
+import { cleanFeatures } from '@cliNext/tools'
 
 export default async (props) => {
   const {
@@ -8,7 +8,7 @@ export default async (props) => {
     isTemplate
   } = props
   // if (false) {
-  //     Engine.launchServable()
+  //     Engine.launchCliNext()
   // }
 
   try {

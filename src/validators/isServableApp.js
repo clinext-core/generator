@@ -1,10 +1,10 @@
-import isFolderServableAppSync from '../lib/lib/isFolderServableAppSync.js'
+import isFolderCliNextAppSync from '../lib/lib/isFolderCliNextAppSync.js'
 
 export default ({
-  id: "isServableApp",
+  id: "isCliNextApp",
   handler: async ({ input, params }) => {
     return {
-      isValid: input ? isFolderServableAppSync(input) : false,
+      isValid: input ? isFolderCliNextAppSync(input) : false,
       message: 'Not a feature folder'
     }
   }

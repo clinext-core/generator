@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) Servable Community. All rights reserved.
+ * Copyright (C) CliNext Community. All rights reserved.
  *--------------------------------------------------------*/
 
 export default async (props) => {
@@ -9,6 +9,6 @@ export default async (props) => {
     toolbox.log('Your project ' + payload.cliID + ' has been created!')
     toolbox.log('')
 
-    toolbox.log('For more information, also visit http://servablecommunity.com and follow us @servablecom.')
+    toolbox.log('For more information, also visit http://cliNextcommunity.com and follow us @cliNextcom.')
     toolbox.log('\r\n')
 }

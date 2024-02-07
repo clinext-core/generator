@@ -5,7 +5,7 @@ dotenv.config()
 
 
 export default async ({ id }) => {
-  const url = `${CliNext.env.SERVABLE_API_HOST}/engine/byuniqueref`
+  const url = `${CliNext.env.cliNext_API_HOST}/engine/byuniqueref`
   try {
     const result = await axios({
       method: "GET",

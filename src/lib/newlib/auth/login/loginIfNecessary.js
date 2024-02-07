@@ -6,7 +6,7 @@ export default async () => {
     return false
   }
 
-  const domain = CliNext.env.SERVABLE_API_HOST
+  const domain = CliNext.env.cliNext_API_HOST
 
   await CliNext.prompt.ask([
     {
@@ -27,7 +27,7 @@ export default async () => {
   })
 
   if (!result) {
-    CliNext.print.info(`Could not connect to the Servable registry. Please try again later`)
+    CliNext.print.info(`Could not connect to the CliNext registry. Please try again later`)
     return false
   }
 

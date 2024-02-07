@@ -2,7 +2,7 @@
 export default ({
   _clinextType: "option",
   type: 'string',
-  message: "Choose a Servable app",
+  message: "Choose a CliNext app",
   promptType: "file-tree-selection",
   name: "appPath",
   onlyShowDir: true,
@@ -13,11 +13,11 @@ export default ({
   hideChildrenOfValid: true,
   hideValidationErrorMessage: true,
   validators: [{
-    id: 'isServableApp'
+    id: 'isCliNextApp'
   }],
   transformers: {
     display: [{
-      id: 'isFolderServableApp'
+      id: 'isFolderCliNextApp'
     }]
   }
 })

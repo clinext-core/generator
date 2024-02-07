@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) Servable Community. All rights reserved.
+ * Copyright (C) CliNext Community. All rights reserved.
  *--------------------------------------------------------*/
 /**
 * @param {import('yeoman-toolbox')} toolbox
@@ -15,7 +15,7 @@ export default async (answers, input = '') => {
   const searchTerm = input
   const page = 0
 
-  const url = `${CliNext.env.SERVABLE_API_HOST}/feature/search`
+  const url = `${CliNext.env.cliNext_API_HOST}/feature/search`
 
   try {
     const result = await axios({

@@ -3,8 +3,8 @@ import axios from "axios";
 dotenv.config()
 
 export default async ({ username, password }) => {
-    const baseUrl = 'https://api.registry.servablecommunity.com/servable'
-    // const baseUrl = 'https://api.registry.servablecommunity.com'
+    const baseUrl = 'https://api.registry.cliNextcommunity.com/cliNext'
+    // const baseUrl = 'https://api.registry.cliNextcommunity.com'
     // const url = `${baseUrl}/searchFeature?searchTerm=${searchTerm}&page=${page}`
     const url = `${baseUrl}/login`
 

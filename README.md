@@ -1,25 +1,22 @@
-# Servable CLI
-
-> [!WARNING]
-> Servable is still experimental and its api may change in the future.
+# CliNext Generator
 
 ![logo](/static/img/icon.png)
 
-[![npm Package](https://img.shields.io/npm/v/toolbox-servable.svg?style=flat-square)](https://www.npmjs.org/package/toolbox-servable)
-[![NPM Downloads](https://img.shields.io/npm/dm/toolbox-servable.svg)](https://npmjs.org/package/toolbox-servable)
-[![Build Status](https://github.com/servable-community/toolbox-servable/actions/workflows/release.yml/badge.svg)](https://github.com/servable-community/toolbox-servable/actions/tests.yml)
+[![npm Package](https://img.shields.io/npm/v/generator.svg?style=flat-square)](https://www.npmjs.org/package/generator)
+[![NPM Downloads](https://img.shields.io/npm/dm/generator.svg)](https://npmjs.org/package/generator)
+[![Build Status](https://github.com/clinext-core/generator/actions/workflows/release.yml/badge.svg)](https://github.com/clinext-core/generator/actions/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install -g @servable/cli
+npm install -g clinext
 ```
 or
 
 ```bash
-yarn global add @servable/cli
+yarn global add clinext
 ```
 
 ## Usage
@@ -28,20 +25,8 @@ yarn global add @servable/cli
 To launch the cli simply type:
 
 ```bash
-servable
-```
-
-![The command toolbox](/static/img/s1.png)
-
-### Command line
-
-```
-Usage:
-  servable:app [<destination>] [options]
-
-
+clinext new
 ```
 
 
-
-A full documentation is available at [https://docs.servable.app](https://docs.servable.app)
+A full documentation is available at [https://docs.clinext.dev](https://docs.clinext.dev)

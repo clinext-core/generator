@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) Servable Community. All rights reserved.
+ * Copyright (C) CliNext Community. All rights reserved.
  *--------------------------------------------------------*/
 
 import validateNonMandatory from "../../../../lib/validateNonMandatory.js"
@@ -47,7 +47,7 @@ export default async (props) => {
                 validate: validateNonMandatory
             },
             {
-                name: 'featureServableEngineVersion',
+                name: 'featureCliNextEngineVersion',
                 validate: validateNonMandatory
             },
             {

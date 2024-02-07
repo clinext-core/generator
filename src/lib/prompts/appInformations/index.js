@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) Servable Community. All rights reserved.
+ * Copyright (C) CliNext Community. All rights reserved.
  *--------------------------------------------------------*/
 
 import askForCliID from "./askForCliID.js"
@@ -17,7 +17,7 @@ export default async (props) => {
   toolbox.ui.drawSectionHeader({
     toolbox,
     title: `App informations 🚀`,
-    subTitle: `Servable required general informations.`
+    subTitle: `CliNext required general informations.`
   })
 
   await askForCliID(props)
