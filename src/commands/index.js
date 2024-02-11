@@ -3,7 +3,7 @@ export default ({
   _clinextType: 'command',
   name: 'clinext',
   description: 'CliNext Framework CLI 🐻',
-  options: [
+  questions: [
     {
       name: 'quick',
       type: 'boolean',

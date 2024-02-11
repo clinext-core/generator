@@ -5,7 +5,7 @@ export default ({
   name: 'new',
   position: 0,
   description: `Generate a CliNext app 🚀`,
-  options: [
+  questions: [
     {
       name: 'cliID',
       type: 'string',
