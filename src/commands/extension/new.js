@@ -56,7 +56,7 @@ export default ({
     },
 
   ],
-  example: "$0 extension eject",
+  example: "$0 extension new",
   handler: async () => {
 
     await CliNext.prompt.ask([

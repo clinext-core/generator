@@ -9,7 +9,7 @@ import path from "path"
 import isFolderFeatureSync from "./lib/isFolderFeatureSync.js"
 import askForGeneric from "../utils/askForGeneric.js"
 import capitalizeFirstLetter from "../../lib/capitalizeFirstLetter.js"
-import featuresInFolder from "./lib/featuresInFolder.js"
+import featuresInFolder from "./src/extensionsInFolder.js"
 
 export default async (props) => {
     const { toolbox, payload,
@@ -68,7 +68,7 @@ export default async (props) => {
 
     }
 
-    const root = `${payload.desiredWriteDestinationPathAbsolute}/lib/features`
+    const root = `${payload.desiredWriteDestinationPathAbsolute}/src/extensions`
     const items = await featuresInFolder(root)
     if (!items || !items.length) {
         toolbox.log('No features found in this app')

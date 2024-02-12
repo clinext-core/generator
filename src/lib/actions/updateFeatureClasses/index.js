@@ -3,8 +3,8 @@
  *--------------------------------------------------------*/
 
 import ownClass from "../../lib/templates/schema/ownClass.js"
-import featureSchemaOwnClasses from "../../prompts/classInformations/lib/featureSchemaOwnClasses.js"
-import featureSchemaRaw from "../../prompts/classInformations/lib/featureSchemaRaw.js"
+import featureSchemaOwnClasses from "../../prompts/classInformations/src/extensionschemaOwnClasses.js"
+import featureSchemaRaw from "../../prompts/classInformations/src/extensionschemaRaw.js"
 
 export default async (props) => {
     const { className, targetFeaturePath } = props

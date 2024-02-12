@@ -20,14 +20,14 @@ export default async (props) => {
     //         cliNextConfig.features = {}
     //     }
     //     cliNextConfig.features.local = [
-    //         `${appPath}/lib/features`
+    //         `${appPath}/src/extensions`
     //         // path.resolve(__dirname, `./features`)
     //     ]
     //     cliNextConfig.rootFeaturePayload = {
     //         type: 'app',
     //         id: 'app',
     //         // path: path.resolve(__dirname, "./app")
-    //         path: `${appPath}/lib/features`
+    //         path: `${appPath}/src/extensions`
     //     }
 
     //     const schema = await buildSchema({ cliNextConfig })

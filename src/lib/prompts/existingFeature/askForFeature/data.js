@@ -129,7 +129,7 @@ export default [
                     "apiKey": "<%= apiKey %>",
                     "frontWebUrl": "<%= frontWebUrl %>",
                     "env": CliNext.env.NODE_ENV,
-                    "cliID": CliNext.env.cliNext_APP_NAME,
+                    "appID": CliNext.env.cliNext_APP_NAME,
                     "restrictSend": "<%= restrictSend %>",
                     "restrictTo": "<%= restrictTo %>",
                     "restrictToRegex": "<%= restrictToRegex %>",

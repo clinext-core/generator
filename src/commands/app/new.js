@@ -1,4 +1,4 @@
-import ChunkAppContent from '../lib/chunks/app/content/index.js'
+import ChunkAppContent from '../../lib/chunks/app/content/index.js'
 
 export default ({
   _clinextType: 'command',
@@ -7,11 +7,11 @@ export default ({
   description: `Generate a CliNext app 🚀`,
   questions: [
     {
-      name: 'cliID',
+      name: 'appID',
       type: 'string',
       promptType: 'input',
       alias: 'n',
-      defaultValue: 'mycliid',
+      defaultValue: 'myappID',
       message: 'Cli ID',
       validators: [{
         id: 'nonempty',
@@ -43,7 +43,7 @@ export default ({
       name: 'destination',
     }
   ],
-  example: "$0 app new --cliID='MyApp'",
+  example: "$0 app new --appID='MyApp'",
   handler: async () => {
     const passed = await ChunkAppContent.ask()
     if (!passed) {

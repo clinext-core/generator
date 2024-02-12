@@ -6,7 +6,7 @@ import path from "path"
 import chalk from "chalk"
 import capitalizeFirstLetter from "../../lib/capitalizeFirstLetter.js"
 import askForGeneric from "../utils/askForGeneric.js"
-import featureSchemaOwnClasses from "./lib/featureSchemaOwnClasses.js"
+import featureSchemaOwnClasses from "./src/extensionschemaOwnClasses.js"
 
 export default async (props) => {
     const { toolbox, payload, options = {} } = props

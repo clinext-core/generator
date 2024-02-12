@@ -2,8 +2,8 @@
 export default ({
   _clinextType: 'command',
   position: 0,
-  name: 'feature',
-  description: 'Feature management',
+  name: 'extension',
+  description: 'Extension management',
   questions: [
   ],
 })

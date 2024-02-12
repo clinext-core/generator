@@ -1,5 +1,4 @@
 import ChunkIndex from '../index/index.js'
-import ChunkTriggers from '../../triggers/index.js'
 
 export default async (props = {}) => {
   const { destination = CliNext.payload.destination } = props
@@ -13,5 +12,4 @@ export default async (props = {}) => {
   })
 
   await ChunkIndex.write({ destination })
-  await ChunkTriggers.write({ destination })
 }

@@ -1,4 +1,4 @@
-import ChunkShell from '../../lib/chunks/feature/shell/index.js'
+import ChunkShell from '../../lib/chunks/extension/shell/index.js'
 import fillPayloadWithFeatureIndex from '../../lib/newactions/fillPayloadWithFeatureIndex.js'
 import removeEjectedFeature from '../../lib/newactions/removeEjectedFeature/index.js'
 import updatePackageForEjectedFeature from '../../lib/newactions/updatePackageForEjectedFeature/index.js'
@@ -7,7 +7,7 @@ import updatePackageForEjectedFeature from '../../lib/newactions/updatePackageFo
 export default ({
   _clinextType: "command",
   name: 'eject',
-  description: 'Eject a feature 🐝',
+  description: 'Eject an extension',
   questions: [
     {
       name: 'appPath',
@@ -76,7 +76,7 @@ export default ({
 
     await CliNext.prompt.ask([
       {
-        root: `${CliNext.payload.appPath}/lib/features`,
+        root: `${CliNext.payload.appPath}/src/extensions`,
         name: 'featurePath',
       },
     ])

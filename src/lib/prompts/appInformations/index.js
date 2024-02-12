@@ -2,7 +2,7 @@
  * Copyright (C) CliNext Community. All rights reserved.
  *--------------------------------------------------------*/
 
-import askForCliID from "./askForCliID.js"
+import askForAppID from "./askForAppID.js"
 import askForGeneric from "../utils/askForGeneric.js"
 
 import askForGenericPort from "../utils/askForGenericPort.js"
@@ -20,8 +20,8 @@ export default async (props) => {
     subTitle: `CliNext required general informations.`
   })
 
-  await askForCliID(props)
-  await askForCliID(props)
+  await askForAppID(props)
+  await askForAppID(props)
 
   await askForGeneric({
     ...props, options: {

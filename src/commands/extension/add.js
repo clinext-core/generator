@@ -1,9 +1,9 @@
-import ChunkFeatureContent from '../../lib/chunks/feature/content/index.js'
+import ChunkFeatureContent from '../../lib/chunks/extension/content/index.js'
 
 export default ({
   _clinextType: "command",
   name: 'add',
-  description: 'Add an empty feature to a Servable app 🐝',
+  description: 'Add an empty extension to a CliNext app',
   questions: [
     {
       name: 'appPath',
@@ -38,7 +38,7 @@ export default ({
       },
     ])
 
-    CliNext.payload.destination = `${CliNext.payload.appPath}/lib/features/${CliNext.payload.featureId}`
+    CliNext.payload.destination = `${CliNext.payload.appPath}/src/extensions/${CliNext.payload.featureId}`
 
     let pass = await ChunkFeatureContent.ask()
 

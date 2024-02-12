@@ -18,7 +18,7 @@ export default async (props) => {
     await askForGeneric({
         ...props, options: {
             ...props.options,
-            name: 'cliID',
+            name: 'appID',
             defaultValue
         }
     })
