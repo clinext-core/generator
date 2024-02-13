@@ -12,10 +12,10 @@ export default ({
       promptType: 'input',
       alias: 'n',
       defaultValue: 'myappID',
-      message: 'Cli ID',
+      message: 'App ID',
       validators: [{
         id: 'nonempty',
-        params: { maxParams: 12 }
+        params: { maxParams: 50 }
       }]
     },
     {
@@ -24,11 +24,13 @@ export default ({
       promptType: 'input',
       defaultValue: 'A CliNext app',
       message: 'App description',
-      validators: [{ id: 'nonempty', params: { maxParams: 12 } }]
+      validators: [{
+        id: 'nonempty',
+        params: { maxParams: 12 }
+      }]
     },
     {
       name: 'installDependencies',
-      message: 'Install dependencies'
     },
     {
       name: 'license',
@@ -41,7 +43,13 @@ export default ({
     },
     {
       name: 'destination',
-    }
+      transformers: {
+        out: [{
+          template: `<%= destination %>/<%= appID %>`
+        }]
+      }
+      // validators: [{ id: 'nonempty' }]
+    },
   ],
   example: "$0 app new --appID='MyApp'",
   handler: async () => {

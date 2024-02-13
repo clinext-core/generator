@@ -9,10 +9,13 @@ export default async () => {
 
   await CliNext.prompt.ask([
     {
-      name: 'destination',
+      name: 'appID',
     },
     {
-      name: 'appID',
+      name: 'appDescription',
+    },
+    {
+      name: 'destination',
     },
     {
       name: 'license',

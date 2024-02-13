@@ -11,6 +11,7 @@
       ],
       "program": "${workspaceFolder}/src/app.js",
       "args": [
+        "app",
         "new",
       ],
       "env": {
@@ -26,6 +27,137 @@
         "--es-module-specifier-resolution=node",
         "--experimental-specifier-resolution=node"
       ],
+      "smartStep": true,
+      "console": "integratedTerminal",
+      "outFiles": [
+        "${workspaceFolder}/build/**/*.js"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Create a new extension",
+      "stopOnEntry": false,
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/src/app.js",
+      "args": [
+        "extension",
+        "new",
+        // "--destination",
+        // "/Users/anak/YourouNak/development/clinext/_lab",
+        // "--extensionId",
+        // "myextension",
+        // "--extensionDescription",
+        // "Tag extension",
+        //"-q"
+      ],
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "envFile": "${workspaceFolder}/.env.development",
+      "runtimeArgs": [
+        // "--trace-warnings",
+        "--require=dotenv/config",
+        "--nolazy",
+        "--expose-gc",
+        "--inspect-brk",
+        "--experimental-modules",
+        "--es-module-specifier-resolution=node",
+        "--experimental-specifier-resolution=node"
+        //"--unhandled-rejections=strict"
+      ],
+      // "preLaunchTask": "tsc: build - tsconfig.json",
+      // "sourceMaps": true,
+      "smartStep": true,
+      "console": "integratedTerminal",
+      "outFiles": [
+        "${workspaceFolder}/build/**/*.js"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Add a local extension to a CliNext app",
+      "stopOnEntry": false,
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/src/app.js",
+      "args": [
+        "extension",
+        "add",
+        "--extensionId",
+        "@adoucoure/taggable",
+        "--extensionDescription",
+        "Tag extension",
+        "--appPath",
+        "/Users/anak/YourouNak/development/clinext/generator/_archive/app"
+        // "./_archive/main",
+        // //"-q"
+      ],
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "envFile": "${workspaceFolder}/.env.development",
+      "runtimeArgs": [
+        // "--trace-warnings",
+        "--require=dotenv/config",
+        "--nolazy",
+        "--expose-gc",
+        "--inspect-brk",
+        "--experimental-modules",
+        "--es-module-specifier-resolution=node",
+        "--experimental-specifier-resolution=node"
+        //"--unhandled-rejections=strict"
+      ],
+      // "preLaunchTask": "tsc: build - tsconfig.json",
+      // "sourceMaps": true,
+      "smartStep": true,
+      "console": "integratedTerminal",
+      "outFiles": [
+        "${workspaceFolder}/build/**/*.js"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Eject a extension",
+      "stopOnEntry": false,
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/src/app.js",
+      "args": [
+        "extension",
+        "eject",
+        "--destination",
+        "/Users/anak/YourouNak/development/clinext/_lab",
+        "--appPath",
+        "/Users/anak/YourouNak/development/servable/core/registry/backend/main",
+        "--extensionPath",
+        "/Users/anak/YourouNak/development/servable/core/registry/backend/main/lib/extensions/@servable-community/commentable",
+        "--description",
+        "Commentable extension"
+      ],
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "envFile": "${workspaceFolder}/.env.development",
+      "runtimeArgs": [
+        // "--trace-warnings",
+        "--require=dotenv/config",
+        "--nolazy",
+        "--expose-gc",
+        "--inspect-brk",
+        "--experimental-modules",
+        "--es-module-specifier-resolution=node",
+        "--experimental-specifier-resolution=node"
+        //"--unhandled-rejections=strict"
+      ],
+      // "preLaunchTask": "tsc: build - tsconfig.json",
+      // "sourceMaps": true,
       "smartStep": true,
       "console": "integratedTerminal",
       "outFiles": [

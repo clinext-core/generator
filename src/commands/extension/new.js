@@ -7,6 +7,7 @@ export default ({
   questions: [
     {
       name: 'extensionId',
+      message: 'Extension ID',
       validators: [{
         id: 'nonEmpty'
       }]
