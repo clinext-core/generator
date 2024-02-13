@@ -1,8 +1,8 @@
 {
-  "name": "<%= featureId %>",
+  "name": "<%= extensionId %>",
   "version": "1.0.0",
   "type": "module",
-  "description": "<%= featureDescription %>",
+  "description": "<%= extensionDescription %>",
   "main": "src/index.json",
   "files": [
     "src"
@@ -24,9 +24,7 @@
   },
   "keywords": [
     "cliNext",
-    "feature",
-    "parse-server",
-    "expressjs"
+    "extension"
   ],
   "author": "",
   "license": "ISC",

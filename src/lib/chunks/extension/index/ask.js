@@ -8,7 +8,7 @@ export default async () => {
       //   name: 'featureName',
       // },
       {
-        name: 'featureDescription',
+        name: 'extensionDescription',
       },
       // {
       //   name: 'homepageUrl',
