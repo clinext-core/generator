@@ -1045,10 +1045,15 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@clinext/sdk@^2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@clinext/sdk/-/sdk-2.1.4.tgz#32106beb1e077a9bfe231325e17e9e563b1343d7"
-  integrity sha512-eqihKpegrUwxkznDAo7gv2+Gauge/tKIAu9EyhBXOA1K5iJ/Z6/sbzpgNKPEY7G0IvbEz3VVpgqTQ+7CBgicuw==
+"@clinext/chunks-extension@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@clinext/chunks-extension/-/chunks-extension-1.0.0.tgz#65deb51bd00fd15a3be821b9b930791caa3d1e18"
+  integrity sha512-kTfgHmE/KvwN+e1Abs0kBOPYk8UxtIj1GPxg1rovbgOLCTR9varjpy7H3OLqgePfs8HVstrKmTFTLBFlHvqL6w==
+
+"@clinext/sdk@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@clinext/sdk/-/sdk-2.3.0.tgz#86448b54f6ccb5eb175b057db57f46957cc2efd5"
+  integrity sha512-x7oi3OFeKjs85KXJTKD+ZHY1aPOophvPzmkAsskjO0Uic5QiHRJScCjqhVQKaC0i4/HR/XYlpdu3R99nI/HWlg==
   dependencies:
     "@inkjs/ui" "^1.0.0"
     axios "^1.6.1"

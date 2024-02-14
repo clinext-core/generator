@@ -5,19 +5,25 @@ export default async () => {
   await CliNext.prompt.ask(
     [
       // {
-      //   name: 'featureName',
+      //   name: 'extensionName',
       // },
       {
+        name: 'extensionId',
+      },
+      {
         name: 'extensionDescription',
+      },
+      {
+        name: 'destination',
       },
       // {
       //   name: 'homepageUrl',
       // },
       // {
-      //   name: 'featureDefaultSlug',
+      //   name: 'extensionDefaultSlug',
       // },
       // {
-      //   name: 'featureGithubId',
+      //   name: 'extensionGithubId',
       // },
       // {
       //   name: 'authorName',
@@ -36,29 +42,29 @@ export default async () => {
       },
     ])
 
-  if (!CliNext.payload.featureName) {
-    const name = capitalizeFirstLetter(CliNext.payload.featureId)
-    CliNext.payload.featureName = name
+  if (!CliNext.payload.extensionName) {
+    const name = capitalizeFirstLetter(CliNext.payload.extensionId)
+    CliNext.payload.extensionName = name
   }
 
-  if (!CliNext.payload.featureHomepageUrl) {
-    CliNext.payload.featureHomepageUrl = ""
+  if (!CliNext.payload.extensionHomepageUrl) {
+    CliNext.payload.extensionHomepageUrl = ""
   }
 
-  if (!CliNext.payload.featureDefaultSlug) {
-    CliNext.payload.featureDefaultSlug = CliNext.payload.featureId
+  if (!CliNext.payload.extensionDefaultSlug) {
+    CliNext.payload.extensionDefaultSlug = CliNext.payload.extensionId
   }
 
-  if (!CliNext.payload.featureHowTo) {
-    CliNext.payload.featureHowTo = ""
+  if (!CliNext.payload.extensionHowTo) {
+    CliNext.payload.extensionHowTo = ""
   }
 
-  // if (!CliNext.payload.featureEngine) {
-  //   CliNext.payload.featureHomepageUrl = "@cliNext-community/parse-server-engine"
+  // if (!CliNext.payload.extensionEngine) {
+  //   CliNext.payload.extensionHomepageUrl = "@cliNext-community/parse-server-engine"
   // }
 
-  if (!CliNext.payload.featureIconUrl) {
-    CliNext.payload.featureIconUrl = ""
+  if (!CliNext.payload.extensionIconUrl) {
+    CliNext.payload.extensionIconUrl = ""
   }
 
   if (!CliNext.payload.authorName) {

@@ -4,5 +4,7 @@ export default ({
   name: "clinext",
   usage: "clinext <command>",
   epilog: "Made by CliNext",
-  extensions: []
+  extensions: [
+    "@clinext/chunks-extension"
+  ]
 })

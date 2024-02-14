@@ -1,4 +1,5 @@
-import ChunkShell from '../../lib/chunks/extension/shell/index.js'
+import ChunkExtensionShell from '../../lib/chunks/extension/shell/index.js'
+import ChunkExtensionContent from '../../lib/chunks/extension/content/index.js'
 
 export default ({
   _clinextType: "command",
@@ -13,6 +14,7 @@ export default ({
       }]
     },
     {
+      name: 'extensionDescription',
       message: 'Extension description',
       validators: [{
         id: 'nonEmpty'
@@ -66,29 +68,16 @@ export default ({
   ],
   example: "$0 extension new",
   handler: async () => {
-
-    await CliNext.prompt.ask([
-      {
-        name: 'extensionId',
-      },
-    ])
-
-    await CliNext.prompt.ask([
-      {
-        name: 'destination',
-
-      },
-    ])
-
-    // CliNext.payload.destination = `${CliNext.payload.destination}/${CliNext.payload.extensionId}`
-
-
-    let pass = await ChunkShell.ask({ askIndex: true })
+    let pass = await ChunkExtensionContent.ask()
+    pass = await ChunkExtensionShell.ask({
+      askIndex: false
+    })
 
     if (!pass) {
       return
     }
 
-    await ChunkShell.write({ askIndex: true })
+    await ChunkExtensionShell.write({ askIndex: true })
+    await ChunkExtensionContent.write()
   },
 })
