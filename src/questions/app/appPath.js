@@ -15,9 +15,8 @@ export default ({
   validators: [{
     id: 'isCliNextApp'
   }],
-  transformers: {
-    display: [{
-      id: 'isFolderCliNextApp'
-    }]
-  }
+  transformers: [{
+    modes: ['display'],
+    id: 'isFolderCliNextApp'
+  }]
 })

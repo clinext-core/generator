@@ -6,10 +6,10 @@ export default ({
   promptType: 'input',
   message: 'Class description',
   defaultValue: '',
-  transformers: {
-    display: ["capitalizeFirstLetter"],
-    out: ["capitalizeFirstLetter"]
-  }
+  transformers: [{
+    modes: ['out', 'display'],
+    id: 'capitalizeFirstLetter'
+  }]
 })
 
 

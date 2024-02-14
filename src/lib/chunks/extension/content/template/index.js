@@ -7,9 +7,5 @@ export default ({
   },
   questions: [],
   validators: [],
-  transformers: {
-    in: [],
-    out: [],
-    display: [],
-  },
+  transformers: [],
 })

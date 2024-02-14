@@ -77,7 +77,7 @@
   "keywords": [],
   "dependencies": {
     "@clinext/chunks-extension": "^1.0.0",
-    "@clinext/sdk": "^2.3.0",
+    "@clinext/sdk": "^2.4.0",
     "axios": "^1.6.1",
     "chalk": "^5.3.0",
     "dotenv": "^16.0.1",

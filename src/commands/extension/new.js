@@ -23,11 +23,10 @@ export default ({
     {
       name: 'destination',
       message: "Where to create",
-      transformers: {
-        out: [{
-          template: `<%= destination %>/<%= extensionId %>`
-        }]
-      }
+      transformers: [{
+        modes: ['out'],
+        template: `<%= destination %>/<%= extensionId %>`
+      }]
       // validators: [{ id: 'nonempty' }]
     },
     {

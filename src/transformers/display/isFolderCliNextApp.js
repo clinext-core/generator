@@ -4,7 +4,7 @@ import isFolderCliNextAppSync from "../../lib/lib/isFolderCliNextAppSync.js"
 
 export default ({
   type: "tranformer",
-  position: "display",
+  modes: ["display"],
   id: "isFolderCliNextApp",
   handler: ({ toolbox, input, item }) => {
     if (!input || !input.length) {

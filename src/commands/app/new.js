@@ -43,11 +43,10 @@ export default ({
     },
     {
       name: 'destination',
-      transformers: {
-        out: [{
-          template: `<%= destination %>/<%= appID %>`
-        }]
-      }
+      transformers: [{
+        modes: ['out'],
+        template: `<%= destination %>/<%= appID %>`
+      }]
       // validators: [{ id: 'nonempty' }]
     },
   ],

@@ -15,10 +15,9 @@ export default ({
   validators: [{
     id: 'isClass'
   }],
-  transformers: {
-    display: [{
-      id: 'isFolderClass'
-    }]
-  }
+  transformers: [{
+    modes: ['display'],
+    id: 'isFolderClass'
+  }]
 })
 
