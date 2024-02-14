@@ -33,5 +33,6 @@ clinext new
 npx clinext new
 ```
 
+This CLI has commands for managaing a CLI app and its extensions.
 
 A full documentation is available at [https://docs.clinext.dev](https://docs.clinext.dev)
