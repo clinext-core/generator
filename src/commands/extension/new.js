@@ -13,6 +13,12 @@ export default ({
       }]
     },
     {
+      message: 'Extension description',
+      validators: [{
+        id: 'nonEmpty'
+      }]
+    },
+    {
       name: 'destination',
       message: "Where to create",
       transformers: {
@@ -37,6 +43,7 @@ export default ({
     {
       name: 'extensionDescription',
     },
+
     // {
     //   name: 'homepageUrl',
     // },

@@ -8,6 +8,7 @@ export default ({
   _clinextType: "command",
   name: 'eject',
   description: 'Eject an extension',
+  disabled: true,
   questions: [
     {
       name: 'appPath',
