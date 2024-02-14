@@ -3,6 +3,7 @@ import ChunkFeatureContent from '../../lib/chunks/extension/content/index.js'
 export default ({
   _clinextType: "command",
   name: 'add',
+  disabled: true,
   description: 'Add an empty extension to a CliNext app',
   questions: [
     {
