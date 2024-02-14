@@ -3,6 +3,7 @@ import chalk from 'chalk'
 import isFolderFeatureSync from "../../lib/lib/isFolderFeatureSync.js"
 
 export default ({
+  _clinextType: 'tranformer',
   type: "tranformer",
   modes: ["display"],
   id: "isFolderFeature",

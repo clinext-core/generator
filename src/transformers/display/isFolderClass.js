@@ -4,6 +4,7 @@ import isFolderClassSync from "../../lib/newlib/isFolderClassSync.js"
 
 
 export default ({
+  _clinextType: 'tranformer',
   type: "tranformer",
   modes: ["display"],
   id: "isFolderClass",

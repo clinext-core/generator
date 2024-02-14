@@ -3,6 +3,7 @@ import chalk from 'chalk'
 import isFolderCliNextAppSync from "../../lib/lib/isFolderCliNextAppSync.js"
 
 export default ({
+  _clinextType: 'tranformer',
   type: "tranformer",
   modes: ["display"],
   id: "isFolderCliNextApp",

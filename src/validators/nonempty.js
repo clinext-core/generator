@@ -1,5 +1,6 @@
 
 export default ({
+  _clinextType: 'validator',
   id: "nonempty",
   handler: async ({ input, params }) => {
     return {

@@ -2,6 +2,7 @@ import getPortOrRandom from "../../lib/port/getPortOrRandom.js"
 import getPortNear from "../../lib/port/getPortNear.js"
 
 export default ({
+  _clinextType: 'tranformer',
   type: "tranformer",
   modes: ["in"],
   id: "getPort",
